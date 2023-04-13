@@ -1,0 +1,199 @@
+:root {
+  --white: white;
+  --black: black;
+  --main-color: #f6f4f4;
+  --border: 1px solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fs-90: 0.75rem;
+  --fs-100: 1rem;
+  --fs-200: 1.1rem;
+  --fs-300: 1.5rem;
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Kalam", cursive;
+  text-transform: capitalize;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background-color: var(--main-color);
+  box-shadow: var(--box-shadow);
+  max-height: 6rem;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-200);
+  padding: 0 4rem;
+}
+.logo {
+  width: 95px;
+  max-width: 200px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-ul {
+  list-style: none;
+  padding-top: 2em;
+  margin-top: 1rem;
+  max-width: 600px;
+}
+.navbar-ul a {
+  color: var(--black);
+  text-decoration: none;
+}
+.navbar-ul a:hover {
+  text-decoration: underline;
+}
+li + li {
+  padding-left: 1em;
+}
+.search-cart-icons {
+  margin-top: 2.7rem;
+  font-size: var(--fs-300);
+  padding-right: 2rem;
+}
+i + i {
+  padding-left: 0.75rem;
+}
+.container {
+  padding: 2em 10em;
+  margin: 2em 5em;
+  max-width: 90%;
+}
+.container .col1 h2,
+.container .col1 h3,
+.container .col1 p {
+  margin-bottom: 1.5em;
+}
+
+.col1 {
+  max-width: 500px;
+  padding-top: 1em;
+}
+select,
+input {
+  margin: 1em 0;
+  width: 100%;
+  padding: 0.5em 0.25em;
+}
+.btn {
+  text-decoration: none;
+  padding: 0.75em;
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+  border-style: none;
+  cursor: pointer;
+  margin: 0.75em 0;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: var(--fs-100);
+}
+swiper-container {
+  width: 600px;
+  height: 100%;
+  max-height: 600px;
+}
+
+swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+swiper-container + .col1 {
+  margin-left: 4em;
+}
+
+/* FOOTER */
+.footer {
+  padding: 2em 0;
+  background-color: var(--black);
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1em;
+}
+.box-container {
+  margin: 0 auto;
+  width: 90%;
+}
+.box + .box {
+  margin-left: 2em;
+}
+.footer .box-container .box h3 {
+  font-size: var(--fs-100);
+  padding-bottom: 1em;
+}
+.footer .box-container .box a {
+  font-size: var(--fs-100);
+  padding-bottom: 0.5em;
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: small;
+}
+.credit {
+  text-align: center;
+  margin-top: 1em;
+  font-size: var(--fs-90);
+}
+.footer .box-container .box p {
+  max-width: 300px;
+  text-transform: initial;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Sew Attire</title>
+  </head>
+  <body>
+    <header class="header row">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.jpg" alt="" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-ul row">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#">product</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-cart-icons">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-cart"></i>
+      </div>
+    </header>
+
+    <!-- SECTION  -->
+    <main>
+      <section class="container row">
+      <swiper-container
+      class="mySwiper"
+      direction="vertical"
+      pagination="true"
+      pagination-clickable="true" class="row">
+      <swiper-slide> <img src="images/product1.2.webp" alt="" /> </swiper-slide>
+      <swiper-slide><img src="images/product1.1.webp" alt="" /></swiper-slide>
+      <swiper-slide><img src="images/product1.webp" alt="" /></swiper-slide>
+      <swiper-slide><img src="images/product1.3.webp" alt="" /></swiper-slide>
+    </swiper-container>
+        <div class="col1">
+          <h3>Sew Attire</h3>
+          <h1>Mustard Eve</h1>
+          <br />
+          <h2>RS.4,490</h2>
+          <p>
+            The perfect cotton dress doesn't exis...... Well, it does! This
+            ankle-length dress with ruffle details and an earthy hue hits all
+            the fashion trends. The Mustard Cotton Maxi Dress awaits you
+          </p>
+          <p>Model height: 5.4ft</p>
+          <p>Fabric: Cotton</p>
+          <select name="" id="">
+            Select Size
+            <option value="">XXL</option>
+            <option value="">XL</option>
+            <option value="">Large</option>
+            <option value="">Medium</option>
+            <option value="">Small</option>
+          </select>
+          <input type="number" value="1" style="display: block;" />
+
+          <button class="btn" href="">Add To Cart</button>
+          <button class="btn" href="">Buy Now</button>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER SECTION START -->
+
+    <footer class="footer">
+      <section class="footer-center">
+      <div class="box-container grid">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Sew Attire is an online store established to meet the demands of
+            western attire for Pakistani women. Trendy, summery and exquisite
+            dresses are the hotsellers of the brand.
+          </p>
+          <br />
+          <p>
+            For exchanges, tracking and bank transfers, email us
+            orders@sewattire.net.
+          </p>
+          <br />
+        </div>
+        <div class="box">
+          <h3>Our Policies</h3>
+          <a href="#">exchange policy</a>
+          <a href="#">privacy policy </a>
+          <a href="#"> shipping policy</a>
+          <a href="#"> terms of service</a>
+          <a href="#">refund policy</a>
+        </div>
+
+        <div class="box">
+          <h3>Customer Care</h3>
+          <a href="#"> about us </a>
+          <a href="#"> contact us </a>
+          <a href="#"> faq's </a>
+          <a href="#"> size chart </a>
+        </div>
+
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#"> <i class="fa fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fa fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fa fa-instagram"></i> instagram </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>Zehra Batool </span> | all rights reserved!
+      </div>
+    </section>
+    </footer>
+    <!-- FOOTER SECTION END -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
